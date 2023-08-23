@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.CardA{
+    background: rgb(85,85,85);
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cardTitle{
+    padding-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+}
+.cardTitle .langDiv{
+    display: flex;
+}
+.langDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.firstDiv{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.secondDiv{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.thirdDiv{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    left: 30px;
+    
+}
+.firstPara{
+    color: black;
+}
+.secondPara{
+    background: #8d8a8a;
+    height: 20px;
+    width: 60%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.secondPara span{
+    background:rgb(64, 63, 63);
+    height: 20px;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.cardDescription{
+    margin-top: 20px;
+}
+
+.cardDescription p{
+    color: black;
+    padding: 0px 10px 20px 20px;
+}
+
+.thirdDiv p{
+    height: 20px;
+    width: 20px;
+    background-color: #8d8a8a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon{
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* -----------------------------------------RESPONSIVENESS CODE------------------------------------------ */

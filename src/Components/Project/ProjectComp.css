@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.practicalMain{
+    color: rgb(255, 254, 254);
+    display: flex;
+    justify-content: space-between;
+   
+}
+.practImage{
+    /* height: 239px; */
+    height: auto;
+    width: 500px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.practImage:hover .imgContent{
+    top: 0%;
+}
+.practImage img{
+    width: 100%;
+    height: auto;
+}
+.imgContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 30px;
+    top: -100%;
+    left: 0%;
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition:  all 0.7s;
+}
+.imgContent a{
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+/* -----------------------------------------RESPONSIVENESS CODE------------------------------------------ */
+
+@media only screen and (max-width: 1128px) {
+
+        .practImage{
+            height: 229px;
+            width: 440px;
+        }    
+
+        .imgContent{
+            height: 229px;
+            width: 440px;
+        }
+}
+@media only screen and (max-width: 991px) {
+
+        .practImage{
+            height: 180px;
+            width: 360px;
+        }
+        .imgContent{
+            height: 180px;
+            width: 360px;
+        }    
+}
+@media only screen and (max-width: 823px) {
+
+        .practImage{
+            height: 180px;
+            width: 340px;
+        }
+        .imgContent{
+            height: 180px;
+            width: 340px;
+        }    
+}
+@media only screen and (max-width: 768px) {
+
+        .practImage{
+            /* height: 330px; */
+            height: auto;
+            width: 100%;
+        }
+        .imgContent{
+            height: 100%;
+            width: 100%;
+        }    
+
+        .practicalMain{
+            flex-direction: column;
+        }
+}
+
+@media only screen and (max-width :576px){
+    
+    .imgContent h1{
+        font-size: 25px;
+    }
+    .imgContent{
+        gap: 25px;
+    }
+
+}
+
+@media only screen and (max-width :410px){
+    .imgContent h1{
+        font-size: 20px;
+    }
+    .imgContent{
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width :280px){
+    .imgContent h1{
+        font-size: 16px;
+    }
+    .imgContent{
+        gap: 15px;
+    }
+}

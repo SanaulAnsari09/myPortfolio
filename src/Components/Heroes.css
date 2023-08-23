@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mainDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    transition: 0.5s;
+    padding: 50px 0 50px 0;
+}
+
+.textArea{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+}
+.textArea p{
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 0.8s;
+    color: rgb(85,85, 85);
+    line-height: 30px;
+
+}
+.textArea p:hover{
+    color: #8d8a8a;
+}
+
+
+.textArea .textFirst{
+    font-size: 70px;
+    transition: 0.8s;
+    color: rgb(85,85, 85);
+}
+.textArea .textFirst:hover{
+    color: #8d8a8a;
+}
+.textArea .textFirst span{
+    color: #8d8a8a;
+}
+.textArea .textSecond{
+    font-size: 70px;
+    transition: 0.8s;
+    color: rgb(85,85, 85);
+    display: none;
+}
+.textArea .textSecond:hover{
+    color: #8d8a8a;
+}
+.textArea .textSecond span{
+    color: #8d8a8a;
+}
+
+.imageArea{
+    height: 400px;
+    width: 300px;
+    border: 8px solid;
+    border-image: linear-gradient(to right, rgb(61, 61, 61), rgb(85,85, 85))1;
+}
+.imageArea img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.socialArea{
+    color: rgb(85,85, 85);
+    display: flex;
+    gap: 50px;
+    font-size: 35px;
+}
+.linkedIn{
+    transition: 0.6s;
+    cursor: pointer;
+}
+.mail{
+    transition: 0.6s;
+    cursor: pointer;
+}
+.gitHub{
+    transition: 0.6s;
+    cursor: pointer;
+}
+.linkedIn:hover{
+    color: #8d8a8a;
+}
+.mail:hover{
+    color: #8d8a8a;
+}
+.gitHub:hover{
+    color: #8d8a8a;
+}
+
+/* -----------------------------------------RESPONSIVENESS CODE------------------------------------------ */
+
+@media only screen and (max-width:991px){
+    .textArea{
+        width: 50%;
+    }
+    .textArea .textFirst{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width :823px){
+    .imageArea{
+        height: 350px;
+        width: 250px;
+        border: 6px solid;
+        border-image: linear-gradient(to right, rgb(61, 61, 61), rgb(85,85, 85))1;
+    }
+
+}
+
+
+@media only screen and (max-width :768px){
+    .mainDiv{
+        flex-direction: column-reverse;
+    }
+
+    .textArea{
+        padding: 40px 0 40px 0;
+    }
+    .textArea p{
+        text-align: center;
+    }
+
+    .textArea .textSecond{
+        display: block;
+        text-align: center;
+    }
+    .textArea .textFirst{
+        display: none;
+    }
+
+    .imageArea{
+        height: 500px;
+        width: 400px;
+        border: 8px solid;
+        border-image: linear-gradient(to right, rgb(61, 61, 61), rgb(85,85, 85))1;
+    }
+
+    .textArea{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width :576px){
+    .imageArea{
+        height: 450px;
+        width: 350px;
+        border: 6px solid;
+        border-image: linear-gradient(to right, rgb(61, 61, 61), rgb(85,85, 85))1;
+    }
+
+}
+@media only screen and (max-width :410px){
+    .imageArea{
+        height: 350px;
+        width: 250px;
+        border: 6px solid;
+        border-image: linear-gradient(to right, rgb(61, 61, 61), rgb(85,85, 85))1;
+    }
+
+}
+@media only screen and (max-width :280px){
+    .imageArea{
+        height: 250px;
+        width: 180px;
+        border: 6px solid;
+        border-image: linear-gradient(to right, rgb(61, 61, 61), rgb(85,85, 85))1;
+    }
+
+    .textArea .textSecond{
+        font-size: 40px;
+    }
+
+}

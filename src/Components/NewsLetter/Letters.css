@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.letterMain{
+    padding: 0 0 50px 0;
+}
+.letterHead{
+    margin: 30px 0 30px 0 ;
+    color: rgb(85, 85, 85);
+    
+}
+.letterSub{
+    display: flex;
+    justify-content: space-between;
+}
+.letterimageArea{
+    width: 50%;
+}
+.letterImg{
+    width: 490px;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+.letterImg:hover .introduction{
+    top: 0%;
+}
+.letterImg img{
+    width: 100%;
+    height: auto;
+}
+.introduction{
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: -100%;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    transition: 0.8s;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduction h1{
+    color: white;
+}
+
+.introduction a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    width: 80px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.letterContentArea{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letterContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.letterContent h1{
+    color: rgb(85,85,85);
+}
+.letterContent a{
+    text-decoration: none;
+    color: #8d8a8a;
+    height: 40px;
+    width: 400px;
+    background: rgb(85, 85, 85);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.letterContent a:hover{
+    background: #8d8a8a;
+    color: rgb(85, 85, 85);
+}
+
+
+/* -----------------------------------------RESPONSIVENESS CODE------------------------------------------ */
+
+@media only screen and (max-width: 1128px){
+
+    .letterImg{
+        width: 440px;
+        height: auto;
+    }
+    .letterContent a{
+        width: 370px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .letterImg{
+        width: 360px;
+        height: auto;
+    }
+    .letterContent a{
+        width: 330px;
+    } 
+}
+
+@media only screen and (max-width: 823px) {
+
+    .letterImg{
+        width: 320px;
+        height: auto;
+    }
+    .letterContent a{
+        width: 300px;
+    }   
+    .letterContent h1{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .letterSub{
+       flex-direction: column;
+    }
+    .letterimageArea{
+        width: 100%;
+    }
+    .letterImg{
+        width: 100%;
+        height: auto;
+    }
+    .letterContentArea{
+        width: 100%;
+    }
+    .letterContent{
+        width: 100%;
+    }   
+    .letterContent a{
+        width: 100%;
+    }   
+    .letterContent{
+        gap: 40px;
+        padding-top: 40px;
+    }
+    .letterContent h1{
+        font-size: 32px;
+    }
+}
+
+
+@media only screen and (max-width :576px){
+    
+    .introduction h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width :410px){
+    .introduction h1{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width :280px){
+    .introduction h1{
+        font-size: 12px;
+    }
+
+}

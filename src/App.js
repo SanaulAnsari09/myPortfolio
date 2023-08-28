@@ -13,7 +13,7 @@ const App=()=>{
     <BrowserRouter>
         <Navbar/>
         <Routes>
-            <Route exat path='/' element={<Home/>}></Route>
+            <Route path='/' element={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
             <Route path='/project' element={<Project/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>

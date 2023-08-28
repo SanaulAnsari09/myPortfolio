@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Components/Home';
-import {  Routes, Route, HashRouter } from 'react-router-dom';
+import {  Routes, Route, BrowserRouter } from 'react-router-dom';
 import About from './About/About';
 import Project from "./ProjectNav/Project";
 import Contact from './Contact/Contact';
@@ -10,7 +10,7 @@ import './App.css';
 const App=()=>{
   return(
     <>
-    <HashRouter basename={'/'}>
+    <BrowserRouter basename={'/'}>
         <Navbar/>
         <Routes>
             <Route exat path='/' element={<Home/>}></Route>
@@ -19,7 +19,7 @@ const App=()=>{
             <Route path='/contact' element={<Contact/>}></Route>
         </Routes>
           <Footer/>
-    </HashRouter>
+    </BrowserRouter>
     </>
   )
 }

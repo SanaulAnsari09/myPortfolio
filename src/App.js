@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Components/Home';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import {  Routes, Route, BrowserRouter } from 'react-router-dom';
 import About from './About/About';
 import Project from "./ProjectNav/Project";
 import Contact from './Contact/Contact';
@@ -10,16 +10,16 @@ import './App.css';
 const App=()=>{
   return(
     <>
-    <HashRouter>
+    <BrowserRouter basename='AnsarPortfolio'>
         <Navbar/>
         <Routes>
-            <Route path='/' element={<Home/>}></Route>
+            <Route exat path='/' element={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
             <Route path='/project' element={<Project/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
         </Routes>
-            <Footer/>
-    </HashRouter>
+          <Footer/>
+    </BrowserRouter>
     </>
   )
 }

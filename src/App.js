@@ -10,7 +10,7 @@ import './App.css';
 const App=()=>{
   return(
     <>
-    <HashRouter>
+    <HashRouter basename={'/AnsarPortfolio'}>
         <Navbar/>
         <Routes>
             <Route exat path='/AnsarPortfolio' element={<Home/>}></Route>

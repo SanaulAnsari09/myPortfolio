@@ -15,7 +15,7 @@ const Navbar =()=>{
                     <div className={show ? 'mobileBar' : 'navbar'}>
                         <div className='logoArea'>
                             <h4><span>S</span>anaul Ansari</h4>
-                            <span>ansarcode09@gmail.com | 8252232266</span>
+                            <span>helloansar09@gmail.com | 8252232266</span>
                         </div>
                         <div className={show ? 'mobileNav' : 'navArea'}>
                          <ul className={show ?'mobileList' : 'listItem'}>

@@ -20,7 +20,7 @@ const Letters=()=>{
                         <div className="letterContentArea">
                             <div className="letterContent">
                                 <h1>Explore more about me ...</h1>
-                                <a href="https://drive.google.com/file/d/1T47fMEWpHiS59uaatk5vLt6kh2gdNJB4/view?usp=drive_link">Download my resume</a>          
+                                <a href="https://drive.google.com/file/d/1Fid2QlUG639CBMziEI4aXFgfIe2u3U-b/view?usp=drive_link">Download my resume</a>          
                             </div>
                         </div>
                     </div>

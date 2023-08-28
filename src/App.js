@@ -13,7 +13,7 @@ const App=()=>{
     <HashRouter>
         <Navbar/>
         <Routes>
-            <Route path='/' element={<Home/>}></Route>
+            <Route exat path='/AnsarPortfolio' element={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
             <Route path='/project' element={<Project/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>

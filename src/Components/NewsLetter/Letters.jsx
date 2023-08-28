@@ -1,6 +1,7 @@
 import React from "react";
 import './Letters.css';
 import certificate from './image/certificate.jpg';
+import { Link } from "react-router-dom";
 const Letters=()=>{
     return(
         <>
@@ -12,14 +13,14 @@ const Letters=()=>{
                                 <img src={certificate} alt="" />
                                 <div className="introduction">
                                     <h1>Course Completion Certificate</h1>
-                                    <a href="/">View</a>
+                                    <Link to="https://drive.google.com/file/d/1FUU2iXfABFvR8jmHt6NfAdVwG7P3QflR/view?usp=drive_link">View</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="letterContentArea">
                             <div className="letterContent">
                                 <h1>Explore more about me ...</h1>
-                                <a href="">Download my resume</a>
+                                <a href="https://drive.google.com/file/d/1T47fMEWpHiS59uaatk5vLt6kh2gdNJB4/view?usp=drive_link">Download my resume</a>          
                             </div>
                         </div>
                     </div>

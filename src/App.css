@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Foldit:wght@600;800&family=MuseoModerno:ital@1&family=New+Tegomin&family=Outfit:wght@200&display=swap');
+*{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Foldit', cursive;
+    font-family: 'MuseoModerno', cursive;
+    font-family: 'New Tegomin', serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* -------------SECOND FONT FAMILY */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Foldit:wght@600;800&family=Indie+Flower&family=MuseoModerno:ital@1&family=New+Tegomin&family=Outfit:wght@200&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Foldit', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'MuseoModerno', cursive;
+    font-family: 'New Tegomin', serif;
+    font-family: 'Outfit', sans-serif;
+} */

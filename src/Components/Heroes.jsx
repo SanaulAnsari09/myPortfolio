@@ -3,6 +3,7 @@ import "./Heroes.css";
 import img2 from "./photo/ansar-4.jpg";
 import {FaLinkedin,FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { Link } from "react-router-dom";
 const Heroes = () => {
   return (
     <>
@@ -16,13 +17,13 @@ const Heroes = () => {
                I gave my full effort and i practiced a lot On the project and on the code.</p>
                 <div className="socialArea">
                       <div className="linkedIn">
-                          <FaLinkedin/>
+                          <Link to="http://www.linkedin.com/in/sanaul-ansari-998a32288"><FaLinkedin/></Link>
                       </div>
                       <div className="gitHub">
-                          <FaGithub/>
+                          <Link to="https://github.com/SanaulAnsari09"><FaGithub/></Link>
                       </div>
                       <div className="mail">
-                          <FiMail/>
+                      <Link to="mailto:ansarcode09@gmail.com"><FiMail/></Link>
                       </div>
                 </div>
             </div>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+
+
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+.logoArea h4{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(85,85,85);
+    transition: 0.8s;
+    padding: 0;
+}
+.logoArea h4:hover{
+    color: #8d8a8a;
+}
+.logoArea h4 span{
+    color: #8d8a8a;
+}
+.logoArea span{
+    color: rgb(85,85,85);
+    margin-top: 20px;
+    transition: 0.6s;
+}
+.logoArea span:hover{
+    color: #8d8a8a;
+}
+
+
+.listItem{
+    display: flex;
+    gap: 50px;
+}
+
+.listItem li{
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid rgb(85,85,85);
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.listItem li:hover{
+    color: #8d8a8a;
+    border: 1px solid #8d8a8a;
+}
+.listItem li a{
+    text-decoration: none;
+    color: rgb(85,85,85);
+    transition: 0.5s;
+}
+.listItem li a:hover{
+    color: #8d8a8a;
+}
+
+.menuArea{
+    display: none;
+    color: rgb(85,85,85);
+    font-size: 40px;
+}
+.menuArea li{
+    list-style: none;
+}
+/* -----------------------------------------RESPONSIVENESS CODE------------------------------------------ */
+
+@media only screen and (max-width:991px){
+    .logoArea h4{
+        font-size: 25px;
+
+    }
+    .listItem{
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width :823px){
+    .menuArea{
+        display: block;
+    }
+    .navArea{
+        display: none;
+    }
+    .navbar{
+        align-items: start;
+    }
+    .forWhat{
+        display: flex;
+        justify-content: space-between;
+        align-items:  start;
+        padding-top: 20px;
+    }
+    .mobileBar{
+        width: 100%;
+        display: flex;
+        flex-direction:column ;
+        height: 250px;
+        
+    }
+    .mobileNav{
+        display: block;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }  
+    .mobileList{
+        width: 100%;
+    }
+
+    .mobileList li{
+        list-style: none;
+        padding: 20px 0 0 0;
+        font-family:sans-serif;
+        border-bottom: 1px solid rgb(85,85,85);
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+    .mobileList li a{
+        text-decoration: none;
+        color: rgb(85,85,85);
+    }
+    .mobileList li:hover{
+        background: #8d8a8a;
+    }
+} 
